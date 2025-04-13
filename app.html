@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habibi's Simple Site</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 16px;
+      background-color: #ff7f50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #ff6347;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome to Habibi’s Learning Lab 🌟</h1>
+  <p>This is a simple site to test out Google Tag Manager events!</p>
+
+  <button id="magicBtn">Click Me!</button>
+
+  <script>
+    document.getElementById('magicBtn').addEventListener('click', function () {
+      console.log('Button was clicked!');
+      // You can push a GTM event here later, like:
+      // dataLayer.push({ event: 'button_click' });
+    });
+  </script>
+</body>
+</html>
